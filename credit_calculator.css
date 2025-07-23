@@ -1,0 +1,204 @@
+/* Modern Futuristic Space-Themed UI */
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    background: radial-gradient(ellipse at top left, #0f2027 0%, #2c5364 100%);
+    margin: 0;
+    padding: 40px;
+}
+
+.credit-container {
+    background: rgba(20, 34, 61, 0.95);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    max-width: 800px; /* Increased width */
+    margin: auto;
+    padding: 48px 48px 40px 48px; /* More spacious */
+    border: 1px solid rgba(255,255,255,0.08);
+    backdrop-filter: blur(6px);
+    position: relative;
+}
+
+.credit-container::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #00c3ff 0%, #ffff1c 100%);
+    opacity: 0.18;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+h2 {
+    color: #00c3ff;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 2.2rem;
+    text-shadow: 0 2px 8px #003b6f80;
+}
+
+textarea {
+    width: 100%;
+    border: 1.5px solid #00c3ff;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    resize: vertical;
+    background: rgba(255,255,255,0.08);
+    color: #eaf6fb;
+    transition: border 0.2s;
+    box-shadow: 0 2px 8px rgba(0,195,255,0.08);
+}
+
+textarea:focus {
+    border: 2px solid #ffff1c;
+    outline: none;
+    background: rgba(255,255,255,0.14);
+}
+
+button {
+    background: linear-gradient(90deg, #00c3ff 0%, #ffff1c 100%);
+    color: #14223d;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px #00c3ff44;
+    transition: background 0.2s, color 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ffff1c 0%, #00c3ff 100%);
+    color: #14223d;
+}
+
+#result {
+    background: rgba(0,195,255,0.08);
+    border-radius: 8px;
+    padding: 22px;
+    margin-top: 16px;
+    font-size: 18px;
+    color: #eaf6fb;
+    box-shadow: 0 2px 8px #00c3ff22;
+    border: 1px solid #00c3ff33;
+}
+
+#result p {
+    margin: 10px 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#result p:first-child, /* 通過學分 */
+#result p strong {
+    font-size: 1.25em;
+    font-weight: 800;
+    color: #ffff1c;
+    text-shadow: 0 1px 8px #00c3ff80;
+    letter-spacing: 2px;
+}
+
+strong {
+    color: #ffff1c;
+    font-weight: 800;
+    text-shadow: 0 1px 4px #00c3ff80;
+}
+
+
+
+strong {
+    color: #ffff1c;
+    font-weight: 800;
+    text-shadow: 0 1px 4px #00c3ff80;
+}
+
+#result p strong.fail {
+    color: #ff6b6b; /* A bright red color */
+    text-shadow: 0 1px 4px rgba(255, 107, 107, 0.5);
+}
+
+
+
+/* Course Table Styles */
+#result h3 {
+    color: #00c3ff;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.course-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 16px;
+}
+
+.course-table th, .course-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(0, 195, 255, 0.2);
+}
+
+.course-table th {
+    color: #00c3ff;
+    font-weight: 600;
+}
+
+.course-table tr:last-child td {
+    border-bottom: none;
+}
+
+.course-table td:nth-child(4), /* Credits */
+.course-table td:nth-child(5)  /* Type */
+{
+    text-align: center;
+}
+
+/* ...existing code... */
+
+/* Instructions Styles */
+.instructions {
+    background: rgba(0, 195, 255, 0.05);
+    border-left: 3px solid #00c3ff;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+    color: #eaf6fb;
+}
+
+.instructions h4 {
+    margin-top: 0;
+    color: #eaf6fb;
+    font-weight: 600;
+}
+
+.instructions ol {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.instructions a {
+    color: #ffff1c;
+    text-decoration: none;
+}
+
+.instructions a:hover {
+    text-decoration: underline;
+}
+
+.instructions .note {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin: 5px 0 0 0;
+}
+
+
+

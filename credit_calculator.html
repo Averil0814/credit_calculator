@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Calculator</title>
+    <link rel="stylesheet" href="credit_calculator.css">
+</head>
+<body>
+    <div class="credit-container">
+        <h2>太空所畢業學分計算機</h2>
+
+        <div class="instructions">
+            <h4>匯入歷年課程(同"交大課程助理"之方式)</h4>
+            <ol>
+                <li>登入交大註冊組 <a href="https://regist.nycu.edu.tw/p_student/default.aspx" target="_blank" rel="noopener noreferrer">學籍成績系統</a></li>
+                <li>點選「歷年成績查詢」按鈕</li>
+                <li>全選 (Ctrl+A) 成績內容，並複製貼至下方表單</li>
+            </ol>
+            <p class="note">註：學校新制度下，不公告各科目具體成績，僅公告等第制成績。</p>
+            <p class="note">註：建議使用 Chrome 或 FireFox，如用 IE 會複製到其他字元造成匯入失敗。</p>
+            <p class="note warning"><strong>重要：本系統無法自動判讀「學術研究倫理」及「性別平等教育」的修課狀態，請務必自行確認是否已通過。</strong></p>
+        </div>
+
+        <textarea id="dataInput" rows="10" cols="50" placeholder="在此貼上您的成績單內容"></textarea>
+        <br>
+        <button id="calculateBtn">計算</button>
+        <div id="result"></div>
+    </div>
+    <script src="credit_calculator.js"></script>
+</body>
+</html>
